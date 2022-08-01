@@ -217,15 +217,16 @@ body {
 /* hero section */
 
 .hero {
+  height: 600px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 
-  background: rgba(47, 48, 58, 0.4);
-  background-image: url(../images/hero/hero-bg.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/hero-bg.jpg);
   background-repeat: no-repeat;
-  background-position: right center;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-section {
