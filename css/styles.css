@@ -130,7 +130,7 @@ body {
 .header-contacts {
   display: flex;
   margin-left: auto;
-
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -586,7 +586,8 @@ body {
   --color1: #afb1b8;
 }
 
-.header-icon:hover {
+.header-icon:hover,
+.header-icon:focus {
   --color1: var(--acent-cl);
   --color2: var(--acent-cl);
 }
