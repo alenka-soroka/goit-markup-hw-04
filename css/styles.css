@@ -108,11 +108,6 @@ body {
   color: var(--acent-cl);
 }
 
-.header-icon:hover,
-.header-icon:focus .header-link-current {
-  color: var(--acent-cl);
-}
-
 .header-link-current::after {
   content: ' ';
   display: block;
@@ -169,10 +164,6 @@ body {
 
 /* btn */
 
-.btn:hover,
-.btn:focus {
-  background-color: #2587d6;
-}
 .btn {
   font-family: 'Roboto';
   cursor: pointer;
@@ -212,6 +203,12 @@ body {
 
 .current-btn {
   background-color: var(--acent-cl);
+}
+
+.light-btn:focus,
+.light-btn:hover {
+  color: #ffffff;
+  background-color: #2587d6;
 }
 
 /* hero section */
@@ -351,6 +348,7 @@ body {
 
 .team-item {
   margin: 15px;
+  background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -546,6 +544,7 @@ body {
 }
 
 .clients-section {
+  padding-top: 94px;
   padding-bottom: 94px;
   background: #ffffff;
 }
@@ -554,6 +553,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 170px;
+  height: 92px;
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -578,17 +579,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 270px;
+  height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
 }
 
-.icon-logo-4 {
-  --color2: #afb1b8;
-}
-
-.clients-icon:hover {
+.clients-icon:hover,
+.clients-icon:focus,
+.clients-link:hover,
+.clients-link:focus {
   --color3: var(--acent-cl);
   --color2: var(--acent-cl);
+  border: 1px solid var(--acent-cl);
 }
 
 .feature-icon:hover {
@@ -596,11 +599,22 @@ body {
 }
 
 .icon-letter {
-  --color1: #afb1b8;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
-.header-icon:hover,
-.header-icon:focus {
-  --color1: var(--acent-cl);
-  --color2: var(--acent-cl);
+.icon-tel {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-letter:hover,
+.icon-letter:focus,
+.header-link-current {
+  color: var(--acent-cl);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--acent-cl);
 }
